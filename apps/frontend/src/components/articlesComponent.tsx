@@ -79,7 +79,7 @@ const ArticlesComponent: FC<articlesProps> = ({ admin = false }) => {
 
   const handleCloseModalUpdateArticle = () => {
     setIsModalOpenUpdateArticle(false);
-    setChoosenArticle('');
+    setChoosenArticle({});
   };
 
   const handleArticleUpdateMutate = (
