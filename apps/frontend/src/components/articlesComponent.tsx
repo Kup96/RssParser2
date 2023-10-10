@@ -9,7 +9,7 @@ import { useMutation, useQuery, useQueryClient } from 'react-query';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import EditIcon from '@mui/icons-material/Edit';
 import { Link } from 'react-router-dom';
 import {
   FormControl,
@@ -194,7 +194,7 @@ const ArticlesComponent: FC<articlesProps> = ({ admin = false }) => {
               }}
               className="button muted-button"
             >
-              <MoreHorizIcon />
+              <EditIcon />
             </button>
           );
         },
