@@ -23,14 +23,19 @@ const ModalContainer = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 50vh;
+  background-color: white;
 `;
 
 const StyledModal = styled(Modal)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  & .MuiPaper-root {
+    width: 50%;
+    background-color: white;
+  }
 `;
 
 const ModalFormCreateArticle: React.FC<ModalProps> = ({ isOpen, onClose }) => {
