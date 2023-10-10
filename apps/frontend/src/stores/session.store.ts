@@ -86,7 +86,6 @@ export class SessionStore {
   };
 
   private readonly setToken = async (token: string | null) => {
-    console.log(token);
     if (token) {
       localStorage.setItem('token', token);
       this._accessToken = token;

@@ -17,7 +17,6 @@ class ArticleService {
   }
 
   public async updateArticle(article: any) {
-    console.log(article);
     return this.httpClient.patch(
       `${this.baseRoute}/editArticle/${article.id}`,
       { link: article.link, title: article.title, rssDate: article.rssDate }

@@ -48,7 +48,7 @@ const ModalFormUpdateArticle: React.FC<ModalProps> = ({
   const [title, setTitle] = useState('');
   const [link, setLink] = useState('');
   const [rssDate, setRssDate] = useState('');
-  console.log(article);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     handleArticleUpdateMutate(title, link, rssDate, article._id);
