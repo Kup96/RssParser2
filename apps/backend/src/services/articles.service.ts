@@ -105,7 +105,6 @@ export class ArticlesService {
     article: ArticleDto,
     id: string
   ): Promise<UpdateWriteOpResult> {
-    console.log('editArticle');
     const findFeedInDb = await this.articleModel.findOne({ _id: id });
     console.log(findFeedInDb);
     if (!findFeedInDb) {

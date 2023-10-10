@@ -26,7 +26,6 @@ export class AdminController {
 
   @Post('logout')
   async logout(@Request() request): Promise<void> {
-    console.log('logout');
     return await this.adminService.logout();
   }
 
